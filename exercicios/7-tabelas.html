@@ -1,9 +1,76 @@
-<!-- 
-  ExercÃ­cio 7: marcar a tabela; realizar a estilizaÃ§Ã£o.
- -->
-
-RelatÃ³rio de Produtos
-Item DescriÃ§Ã£o       Quantidade Valor
-1    SabÃ£o em pÃ³     20         R$ 5,00
-2    Sabonete        13         R$ 1,90
-3    Papel higiÃªnico 17         R$ 10,00
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <title>Document</title>
+  <style>
+    .table{
+      width: 100%;
+    }
+    .table th {
+      background-color:slategrey;
+    }
+    .table, .table th, .table td{
+      border: 1px #000000 solid;
+      border-collapse: collapse;
+    }
+    .table th, .table td{
+      padding: 5px;
+    }
+    .table tr:nth-child(even){
+      background-color:whitesmoke;
+    }
+    .table tr:nth-child(1){
+      background-color:aqua;
+    }
+    .table tr:not(:nth-child(1)):hover{
+      background-color:cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <table class="table" >
+    <tr>
+      <th>Item</th>
+      <th>Descrição</th>
+      <th>Quantidade</th>
+      <th>Valor</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Sabão em pó</td>
+      <td>20</td>
+      <td>R$ 5,00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Sabonete</td>
+      <td>13</td>
+      <td>R$ 1,90</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Papel Higienico</td>
+        <td>17</td>
+        <td>R$ 10,00</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Sabão em pó</td>
+        <td>20</td>
+        <td>R$ 5,00</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sabonete</td>
+        <td>13</td>
+        <td>R$ 1,90</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Papel Higienico</td>
+          <td>17</td>
+          <td>R$ 10,00</td>
+        </tr>
+  </table>
+</body>
+</html>

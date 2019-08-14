@@ -1,17 +1,39 @@
-<!-- 
-  Exercício 6: marcar as listas ordenada e não ordenada; realizar a estilização.
- -->
-
-Listas ordenadas e não-ordenadas
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing:  border-box;
+    }
+    .menu{
+      background-color: #C03020;      
+      list-style: none;
+      display: flex;
+    }
     
-Lista de atividades de estágio
-Solicitar matrícula
-Realizar o estágio
-Escrever o relatório
-Apresentar o relatório ao orientador
-
-Lista de frutas
-Maça
-Pera
-Uva
-Banana
+    .menu__item > a{        
+      display: block;
+      text-decoration: none;   
+      padding: 20px; 
+      color: #ffffff;   
+    }
+    .menu__item > a:hover{
+      background-color: #ffffff;
+      color: #C03020;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="menu"> 
+      <li class="menu__item"><a href="#">Inicio</a></li>
+      <li class="menu__item"><a href="#">Todas as S�ries</a></li>
+      <li class="menu__item"><a href="#">Sobre</a></li>
+      <li class="menu__item"><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
